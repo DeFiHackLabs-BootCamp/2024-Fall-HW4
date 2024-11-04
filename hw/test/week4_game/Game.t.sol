@@ -7,5 +7,7 @@ import "./GameAttack.sol";
 contract GameTest is GameBaseTest {
     function test_write_here() public checkChallengeSolved {
         /*  write here  */
+        Attacker attacker = new Attacker(game);
+        attacker.attack();
     }
 }
